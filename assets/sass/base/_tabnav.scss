@@ -1,0 +1,136 @@
+/* -----------------------------------------
+    Nav Tabs CSS
+----------------------------------------- */
+
+.tabs-navigation {
+
+  .nav-tabs {
+    display: inline-flex;
+    border: none;
+    z-index: 1;
+    position: relative;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow: unset;
+    margin: 0;
+    padding: 0;
+
+    .nav-link {
+      font-size: 14px;
+      font-weight: 600;
+      padding: 9px 20px;
+      color: var(--bs-body-color);
+      transition: all 0.4s ease;
+      border: 1px solid var(--bs-border-color);
+      margin: 0;
+      z-index: 999;
+      cursor: pointer;
+      background: 0;
+      border-radius: 8px;
+
+      @media (max-width:992px) {
+        font-size: 14px;
+        font-weight: 500;
+        padding: 9px 15px;
+      }
+    }
+
+    .nav-link.active {
+      border: 1px solid var(--bs-primary);
+      background: var(--bs-primary);
+      color: var(--bs-white);
+    }
+  }
+}
+
+.tabs-navigation .nav[data-hover=fancyHover] .nav-item {
+  z-index: 2;
+}
+
+.tabs-navigation .nav li {
+  flex: 0 0 auto;
+}
+
+
+.tabs-navigation .nav .nav-link:is(.active, :hover) {
+  color: var(--bs-white);
+  background: var(--bs-primary);
+  border-radius: 6px;
+
+}
+
+.tabs-navigation .nav[data-hover=fancyHover] .nav-item:is(.active) .nav-link {
+  color: var(--bs-white);
+  background: var(--bs-primary) !important;
+  border-radius: 6px;
+}
+
+.tabs-navigation .nav[data-hover=fancyHover] .nav-item:is(.active) .nav-link:is(:hover) {
+  background: var(--bs-white);
+  border: 1px solid var(--bs-primary);
+  border-radius: 6px;
+}
+
+.tabs-navigation .target {
+  position: absolute;
+  background: var(--bs-primary);
+  z-index: -1;
+  transform: translateX(-50%);
+  transition: all 0.3s ease-in-out;
+  border-radius: 6px !important;
+}
+
+.tab-pane.fade {
+  transition: all 0.2s;
+  transform: translateY(1rem);
+}
+
+.tab-pane.fade.show {
+  transform: translateY(0rem);
+}
+
+// tabs-navigation scrollbar css
+.tabs-navigation {
+  overflow: hidden;
+  overflow-x: auto;
+  width: 100%;
+  padding-bottom: 14px;
+}
+
+/* Firefox */
+.tabs-navigation {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(var(--bs-primary-rgb), 0.9) var(--bs-primary);
+  scroll-behavior: smooth;
+}
+
+/* Chrome, Edge, Safari */
+.tabs-navigation::-webkit-scrollbar {
+  height: 5px;
+}
+
+.tabs-navigation::-webkit-scrollbar-track {
+  background: var(--bs-primary);
+  border-radius: 10px;
+}
+
+.tabs-navigation::-webkit-scrollbar-thumb {
+  background: rgba(var(--bs-primary-rgb), 0.9);
+  border-radius: 10px;
+}
+
+.tabs-navigation::-webkit-scrollbar-thumb:hover {
+  background: rgba(var(--bs-primary-rgb), 1);
+}
+
+// tabs-navigation-v2
+
+.tabs-navigation-v2.tabs-navigation .nav-tabs .nav-link {
+  background: #F6F5F2;
+  color: var(--bs-body-color);
+}
+
+.tabs-navigation-v2.tabs-navigation .nav-tabs .nav-link.active {
+  color: var(--bs-white);
+  background: var(--bs-primary);
+}

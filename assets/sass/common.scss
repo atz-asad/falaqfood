@@ -1,0 +1,55 @@
+/*
+************
+*************************
+
+Template Name: falaqfood-html-template
+Author: kreativdev
+Author URI: https://themeforest.net/user/kreativdev
+Description: falaqfood-html-template.
+Tags: falaqfood, legal, attorney, law firm, advocate, law office, responsive, html5, css3, creative, modern, legal advisor,legalservices, consultation, case management, legal website, landing page, template.
+Version: 1.0.0
+-----------------------------------------------------------------------------------
+
+>>> TABLE OF CONTENTS:
+=================== 
+01. variable css
+02. lazyload css
+03. spacer css
+04. typography css
+05. button css
+06. form css
+07. header css
+08. hero css
+09. category css
+10. product css
+11. banner css
+12. footer css
+
+
+******************************************************* 
+*************************************************************** */
+// base
+@import "base/variable";
+@import "base/lazyload";
+@import "base/spacer";
+@import "base/typography";
+@import "base/button.scss";
+@import "base/form.scss";
+@import "base/niceselect.scss";
+@import "base/select2.scss";
+@import "base/pagination.scss";
+@import "base/tabnav.scss";
+@import "base/accordion.scss";
+@import "base/custom-animation.scss";
+
+
+// header
+@import "header/header";
+
+// layout
+@import "layout/hero";
+
+
+
+@import "layout/footer";
+@import "layout/preloder";

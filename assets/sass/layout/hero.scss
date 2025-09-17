@@ -1,0 +1,13 @@
+/*====================== */
+/*====== Hero css ======*/
+/*====================== */
+
+.hero-area {
+  padding-top: 180px;
+}
+
+@media (max-width:1199px) {
+  .hero-area {
+    padding-top: 80px;
+  }
+}

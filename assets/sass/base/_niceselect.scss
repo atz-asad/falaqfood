@@ -1,0 +1,23 @@
+.nice-select {
+  border: solid 1px var(--bs-border-color);
+}
+
+.nice-select:active,
+.nice-select.open,
+.nice-select:focus {
+  border-color: var(--bs-border-color);
+}
+
+/*--------------- nice-select Scrollbar -------------------*/
+.nice-select .list::-webkit-scrollbar {
+  width: 5px;
+}
+
+.nice-select .list::-webkit-scrollbar-track {
+  background-color: var(--bs-light);
+}
+
+.nice-select .list::-webkit-scrollbar-thumb {
+  border-radius: 30px;
+  background: rgba(var(--bs-dark-rgb), 0.2);
+}

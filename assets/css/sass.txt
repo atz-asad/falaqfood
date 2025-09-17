@@ -1,0 +1,1 @@
+sass --watch inner-page.scss inner-page.css

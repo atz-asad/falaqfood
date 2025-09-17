@@ -1,0 +1,111 @@
+/**************************/
+/******** Footer CSS ******/
+/**************************/
+
+.footer-widget-item {
+  li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+.footer-widget-item a {
+  text-decoration: none;
+  color: var(--bs-body-color);
+  display: inline-block;
+  transition: all 0.4s ease;
+  position: relative;
+
+
+
+  i {
+    color: var(--bs-primary);
+    margin-inline-end: 7px;
+  }
+}
+
+.footer-widget-2 {
+  text-align: center;
+  border-left: 1px solid #eaeaea;
+
+  .footer-widget-item-2 {
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+  }
+}
+
+.footer-widget-item a:hover {
+  color: var(--bs-primary);
+}
+
+
+
+.footer-area {
+
+  .socials {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+
+    a {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: rgba(var(--bs-primary-rgb), 0.15);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      font-size: 16px;
+      transition: all 0.3s ease-in-out;
+      color: var(--bs-primary);
+
+      &:hover {
+        background: rgba(var(--bs-primary-rgb), 1);
+        color: var(--bs-white);
+        transform: translateY(-5px);
+      }
+    }
+  }
+}
+
+/*============================
+  footer-copyright
+==============================*/
+//back to top css
+.footer-copyright {
+  padding-top: 20px;
+  padding-bottom: 10px;
+
+  .copyright-content {
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid #ddd;
+    padding-top: 20px;
+  }
+}
+
+.go-top {
+  --size: 50px;
+  height: var(--size);
+  width: var(--size);
+  border: 1px solid var(--bs-border-color);
+  background: var(--bs-white);
+  color: var(--bs-body-color);
+  text-align: center;
+  line-height: var(--size);
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  left: 10px;
+  border-radius: 50%;
+  z-index: 99;
+}

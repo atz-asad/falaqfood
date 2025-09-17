@@ -1,0 +1,229 @@
+/* -----------------------------------------
+    Typography CSS
+----------------------------------------- */
+html {
+  scroll-behavior: smooth;
+}
+
+.body-font {
+  font-family: var(--bs-body-font-family);
+}
+
+
+h1,
+.h1 {
+  line-height: 1.17242;
+  font-weight: 700;
+}
+
+h2,
+.h2 {
+  line-height: 1.228;
+  font-weight: 600;
+}
+
+h3,
+.h3 {
+  line-height: 1.228;
+  font-weight: 600;
+}
+
+h4 {
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+h5 {
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+h6 {
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.extra-small {
+  font-size: 12px;
+}
+
+.font-sm {
+  font-size: var(--font-sm);
+}
+
+.reset-ul {
+  list-style: none;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+  transition: all .3s ease;
+
+  &:hover {
+    color: var(--bs-primary);
+  }
+}
+
+p {
+  color: var(--bs-body-color);
+}
+
+.radius-sm {
+  border-radius: var(--bs-radius-sm) !important;
+}
+
+.radius-md {
+  border-radius: var(--bs-radius-md) !important;
+}
+
+.radius-lg {
+  border-radius: var(--bs-radius-lg) !important;
+}
+
+.radius-30 {
+  border-radius: 30px !important;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.fw-extrabold {
+  font-weight: 800;
+}
+
+.fw-black {
+  font-weight: 900;
+}
+
+.bg-primary-light {
+  background: rgba(var(--bs-primary-rgb), 0.16);
+}
+
+.shadow-md {
+  box-shadow: var(--shadow-md);
+}
+
+.gap-14 {
+  gap: 14px;
+}
+
+input,
+button,
+select,
+optgroup,
+textarea {
+  font-family: var(--bs-body-font-family);
+}
+
+.bg-cover {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+}
+
+/* Badge CSS */
+.badge {
+  padding: 8px 14px;
+  font-size: var(--font-xsm);
+}
+
+.font-xsm {
+  font-size: var(--font-xsm);
+}
+
+.badge.bg-success {
+  color: var(--bs-green);
+  background: rgba(var(--bs-green-rgb), 0.2) !important;
+}
+
+.badge.bg-info {
+  color: var(--bs-blue);
+  background: rgba(var(--bs-blue-rgb), 0.2) !important;
+}
+
+.badge.bg-danger {
+  color: var(--bs-red);
+  background: rgba(var(--bs-red-rgb), 0.2) !important;
+}
+
+.badge.bg-warning {
+  color: var(--bs-yellow);
+  background: rgba(var(--bs-yellow-rgb), 0.2) !important;
+}
+
+.rate {
+  background-image: url(../images/rate-star-md.png);
+  background-position: 0 -16px;
+  background-repeat: repeat-x;
+  height: 16px;
+  transition: all 0.5s ease-out 0s;
+  -webkit-transition: all 0.5s ease-out 0s;
+  width: 116px;
+  overflow: hidden;
+}
+
+.rating {
+  background-image: url(../images/rate-star-md.png);
+  background-position: 0 0;
+  background-repeat: repeat-x;
+  height: 16px;
+}
+
+
+:is(.lc-1, .lc-2, .lc-3, .lc-4, .lc-5, .lc-6, .lc-7) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.lc-1 {
+  -webkit-line-clamp: 1 !important;
+  line-clamp: 1 !important;
+}
+
+.lc-2 {
+  -webkit-line-clamp: 2 !important;
+  line-clamp: 2 !important;
+}
+
+.lc-3 {
+  -webkit-line-clamp: 3 !important;
+  line-clamp: 3 !important;
+}
+
+.lc-4 {
+  -webkit-line-clamp: 4 !important;
+  line-clamp: 4 !important;
+}
+
+.lc-5 {
+  -webkit-line-clamp: 5 !important;
+  line-clamp: 5 !important;
+}
+
+.lc-6 {
+  -webkit-line-clamp: 6 !important;
+  line-clamp: 6 !important;
+}
+
+.lc-7 {
+  -webkit-line-clamp: 7 !important;
+  line-clamp: 7 !important;
+}
+
+// section-title
+.section-title-inline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}

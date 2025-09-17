@@ -1,0 +1,108 @@
+/* -----------------------------------------
+  Spacing CSS
+----------------------------------------- */
+$spacer: 1rem;
+
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+
+  // custom
+  10: $spacer * 0.625,
+  14: $spacer * 0.875,
+  18: $spacer * 1.125,
+  20: $spacer * 1.25,
+  24: $spacer * 1.5,
+  30: $spacer * 1.875,
+  40: $spacer * 2.5,
+  50: $spacer * 3.125,
+  60: $spacer * 3.75,
+  70: $spacer * 4.375,
+  80: $spacer * 5,
+  90: $spacer * 5.625,
+  100: $spacer * 6.25,
+  120: $spacer * 7.5,
+);
+
+// Breakpoints like Bootstrap
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+);
+
+// Spacing directions
+$properties: (
+  m: margin,
+  mt: margin-top,
+  mb: margin-bottom,
+  // ms: margin-left,
+  // me: margin-right,
+  mx: (margin-left, margin-right),
+  my: (margin-top, margin-bottom),
+  p: padding,
+  pt: padding-top,
+  pb: padding-bottom,
+  // ps: padding-left,
+  // pe: padding-right,
+  px: (padding-left, padding-right),
+  py: (padding-top, padding-bottom)
+);
+
+// without-responsive spacing utility (global)
+@each $prop, $cssProp in $properties {
+  @each $size, $value in $spacers {
+    .#{$prop}-#{$size} {
+      @if type-of($cssProp)=='list' {
+        @each $subProp in $cssProp {
+          #{$subProp}: $value;
+        }
+      }
+
+      @else {
+        #{$cssProp}: $value;
+      }
+    }
+  }
+}
+
+// Responsive spacing utility (global)
+@each $break, $breakpoint in $breakpoints {
+  @media (min-width: $breakpoint) {
+    @each $prop, $cssProp in $properties {
+      @each $size, $value in $spacers {
+        .#{$prop}-#{$break}-#{$size} {
+          @if type-of($cssProp)=='list' {
+            @each $subProp in $cssProp {
+              #{$subProp}: $value;
+            }
+          }
+
+          @else {
+            #{$cssProp}: $value;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+.gap-10 {
+  gap: 10px;
+}
+
+.gap-30 {
+  gap: 30px;
+}
+
+.gap-24 {
+  gap: 24px;
+}
