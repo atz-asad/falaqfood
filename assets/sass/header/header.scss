@@ -472,7 +472,7 @@
 
 .navbar .navbar-nav .dropdown .dropdown-menu.show {
   transition: all .4s ease-in-out;
-  --bs-border-radius: 0 0 10px 10px;
+  --bs-border-radius: 0;
   --bs-dropdown-spacer: 0;
   --bs-dropdown-border-width: 0;
   --bs-dropdown-link-hover-color: var(--bs-primary);
@@ -486,7 +486,6 @@
   --bs-dropdown-item-separator-color: var(--bs-dropdown-link-color);
   animation: fadeUp 400ms ease-in-out forwards;
   transform-origin: top center;
-  border-bottom: 5px solid var(--bs-primary);
 }
 
 @keyframes fadeUp {
