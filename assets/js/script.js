@@ -238,21 +238,12 @@
     });
 
 
-    //home 3  testimonial-slider-3
-    if ($('.testimonial-slider').length > 0) {
-        var swiper = new Swiper(".testimonial-slider", {
-            speed: 400,
-            spaceBetween: 25,
-            loop: false,
-            slidesPerView: 1,
-            effect: "fade",
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-        });
-    }
-
+    var swiper = new Swiper(".productmodal_slider", {
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
 
 
 })(jQuery);

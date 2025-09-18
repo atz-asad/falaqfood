@@ -10,6 +10,11 @@
 
 // font-family: "Roboto", sans-serif;
 
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+// font-family: "Lato", sans-serif;
+
 :root {
   --bs-primary: #159758;
   --bs-primary-rgb: 21, 151, 88;
@@ -17,8 +22,8 @@
   --bs-body-bg-rgb: 255, 255, 255;
   --bs-body-color: #686868;
   --bs-body-color-rgb: 104, 104, 104;
-  --bs-heading-color: #20170B;
-  --bs-heading-color-rgb: 32, 23, 11;
+  --bs-heading-color: #000;
+  --bs-heading-color-rgb: 0, 0, 0;
   --bs-border-color: #EAEAEA;
 
   --bs-secondary: #EFF6FF;
@@ -29,7 +34,7 @@
 
   --bs-body-font-family: "Roboto", sans-serif;
   --bs-body-font-weight: 500;
-  --bs-heading-font-family: "Lora", serif;
+  --bs-heading-font-family: "Lato", sans-serif;
   --font-awesome: "Font Awesome 6 Pro";
 
   --bs-radius-sm: 6px;
