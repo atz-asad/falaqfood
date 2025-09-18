@@ -179,22 +179,7 @@
     })
 
 
-    // odometer CountDown
-    if ($('.odometer').length > 0) {
-        $('.odometer').each(function () {
-            var $this = $(this);
-            $this.appear(function () {
-                var countNumber = $this.attr("data-count");
-                var odometer = new Odometer({
-                    el: $this[0],
-                    value: 0,
-                    format: '',
-                    duration: 1500,
-                });
-                odometer.update(countNumber);
-            }, { accX: 0, accY: 0 });
-        });
-    }
+
 
     /*============================================
         default Slider
