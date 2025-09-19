@@ -39,7 +39,7 @@
         <div class="pages">
 
             <!-- Start preloader  -->
-            <div class="preloader">
+            <!-- <div class="preloader">
                 <div class="preloader-content">
                     <div class="double-wrap">
                         <div class="double-bounce1"></div>
@@ -47,11 +47,36 @@
                     </div>
 
                 </div>
-            </div>
+            </div> -->
             <!-- End preloader  -->
 
+            <div class="bottom-nav">
+                <ul class="reset-ul action">
+                    <li>
+                        <a href="#">
+                            <i class="fa-regular fa-house"></i>
+                            <p>Shop</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="add-to-cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span>0</span>
+                            <p>cart</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-regular fa-user"></i>
+                            <p>My Account</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
             <!--========= Start Header =========-->
-            <header class="header-area">
+            <header class="header-area header-area-v2">
                 <div class="header-top bg-primary text-white">
                     <div class="container">
                         <div class="row">
@@ -89,21 +114,68 @@
                         </div>
                     </div>
                 </div>
+                <div class="header-top-mobile bg-primary text-white">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-6">
+                                <div class="header-top-mobile-area">
+                                    <ul class="reset-ul header-top-mobile-list">
+                                        <li>
+                                            <div class="header-top-socials">
+                                                <a href="#">
+                                                    <i class="fa-brands fa-facebook-f"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa-brands fa-youtube"></i>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="offer-btn">
+                                                <i class="fa-solid fa-volume"></i>
+                                                offers
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <nav class="navbar navbar-expand-xl hover-menu">
                     <div class="container">
                         <!-- Logo -->
-                        <a class="navbar-brand" href="index.html" target="_self" title="Teeno">
+                        <a class="navbar-brand d-none d-xl-block" href="index.html" target="_self" title="Teeno">
                             <img src="assets/images/logo/logo.png" alt="Brand Logo">
                         </a>
-                        <button class="menu-toggler d-block d-xl-none" type="button" data-bs-toggle="offcanvas"
-                            data-bs-target="#mobilemenu-offcanvas" aria-controls="mobilemenu-offcanvas">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </button>
+
+                        <div class="mobile-nav">
+                            <button class="menu-toggler d-block d-xl-none" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#mobilemenu-offcanvas" aria-controls="mobilemenu-offcanvas">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                            <!-- Logo -->
+                            <a class="navbar-brand ms-auto" href="index.html" target="_self" title="Teeno">
+                                <img src="assets/images/logo/logo.png" alt="Brand Logo">
+                            </a>
+
+                            <div class="header-right ms-auto">
+                                <ul class="reset-ul action">
+                                    <li>
+                                        <a href="#" class="add-to-cart">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            <span>0</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
                         <div class="collapse navbar-collapse" id="main_nav">
                             <!-- Header menu -->
-                            <ul id="mainMenu" class="navbar-nav">
+                            <ul id="mainMenu" class="navbar-nav ms-auto">
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Shop</a>
                                     <ul class="dropdown-menu shadow">
@@ -142,7 +214,10 @@
                                         <a href="#"><i class="fa-solid fa-user"></i></a>
                                     </li>
                                     <li>
-                                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                        <a href="#" class="add-to-cart">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            <span>0</span>
+                                        </a>
                                     </li>
                                     <li>
                                         <a href="#">0TK</a>
@@ -167,6 +242,18 @@
                         <i class="fa-light fa-xmark"></i>
                     </a>
                 </div>
+
+                <div class="form_area">
+                    <form action="">
+                        <div class="from-group">
+                            <input type="text" class="form-control" placeholder="Serch For Product">
+                            <button class="btn" type="submit">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
                 <div class="offcanvas-body">
                     <!-- mobile-menu clone -->
                     <nav id="mobileMenu" class="mobile-menu mb-40">
@@ -199,8 +286,8 @@
                             <h4 class="text-primary text-center mb-30">FEATURED PRODUCTS</h4>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="row product-card-row">
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
                             <div class="product-card mb-30">
                                 <div class="product-image">
                                     <img class="img-one blur-up lazyload" src="assets/images/placeholder.svg"
@@ -229,7 +316,7 @@
                                 <a href="#" class="btn btn-primary buy-btn">buy now </a>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
                             <div class="product-card mb-30">
                                 <div class="product-image">
                                     <img class="img-one blur-up lazyload" src="assets/images/placeholder.svg"
@@ -258,7 +345,7 @@
                                 <a href="#" class="btn btn-primary buy-btn">buy now </a>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
                             <div class="product-card mb-30">
                                 <div class="product-image">
                                     <img class="img-one blur-up lazyload" src="assets/images/placeholder.svg"
@@ -287,7 +374,7 @@
                                 <a href="#" class="btn btn-primary buy-btn">buy now </a>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
                             <div class="product-card mb-30">
                                 <div class="product-image">
                                     <img class="img-one blur-up lazyload" src="assets/images/placeholder.svg"
@@ -316,7 +403,7 @@
                                 <a href="#" class="btn btn-primary buy-btn">buy now </a>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
                             <div class="product-card mb-30">
                                 <div class="product-image">
                                     <img class="img-one blur-up lazyload" src="assets/images/placeholder.svg"
@@ -345,7 +432,7 @@
                                 <a href="#" class="btn btn-primary buy-btn">buy now </a>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
                             <div class="product-card mb-30">
                                 <div class="product-image">
                                     <img class="img-one blur-up lazyload" src="assets/images/placeholder.svg"
@@ -374,7 +461,7 @@
                                 <a href="#" class="btn btn-primary buy-btn">buy now </a>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
                             <div class="product-card mb-30">
                                 <div class="product-image">
                                     <img class="img-one blur-up lazyload" src="assets/images/placeholder.svg"
@@ -403,7 +490,7 @@
                                 <a href="#" class="btn btn-primary buy-btn">buy now </a>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
                             <div class="product-card mb-30">
                                 <div class="product-image">
                                     <img class="img-one blur-up lazyload" src="assets/images/placeholder.svg"
@@ -432,7 +519,7 @@
                                 <a href="#" class="btn btn-primary buy-btn">buy now </a>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
                             <div class="product-card mb-30">
                                 <div class="product-image">
                                     <img class="img-one blur-up lazyload" src="assets/images/placeholder.svg"
@@ -461,7 +548,7 @@
                                 <a href="#" class="btn btn-primary buy-btn">buy now </a>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
                             <div class="product-card mb-30">
                                 <div class="product-image">
                                     <img class="img-one blur-up lazyload" src="assets/images/placeholder.svg"
@@ -490,7 +577,7 @@
                                 <a href="#" class="btn btn-primary buy-btn">buy now </a>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
                             <div class="product-card mb-30">
                                 <div class="product-image">
                                     <img class="img-one blur-up lazyload" src="assets/images/placeholder.svg"
@@ -519,7 +606,7 @@
                                 <a href="#" class="btn btn-primary buy-btn">buy now </a>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
                             <div class="product-card mb-30">
                                 <div class="product-image">
                                     <img class="img-one blur-up lazyload" src="assets/images/placeholder.svg"
@@ -1106,7 +1193,7 @@
                                 attractive corporate deals,
                                 custom pricing, and reliable delivery to help fuel your operations with goodness.</p>
                         </div>
-                        <div class="col-xl-3  col-lg-4">
+                        <div class="col-xl-3  col-lg-4 col-sm-5">
                             <a href="#" class="btn btn-primary w-100">LETS SCHEDULE A MEETING</a>
                         </div>
 

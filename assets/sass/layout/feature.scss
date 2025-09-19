@@ -161,3 +161,21 @@
     }
   }
 }
+
+@media (max-width:992px) {
+  .feature-section .product-card-row {
+    --bs-gutter-x: .5rem;
+  }
+
+  .feature-section .product-card .add-btn {
+    margin-bottom: 10px;
+    height: 42px;
+    line-height: 42px;
+  }
+
+  .btn {
+    --bs-btn-padding-x: 20px;
+    --bs-btn-padding-y: 10px;
+    font-size: 14px;
+  }
+}

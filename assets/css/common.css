@@ -5616,6 +5616,7 @@ textarea {
   left: 0;
   width: 100%;
   z-index: 999;
+  background: #fff;
 }
 
 .navbar {
@@ -5913,6 +5914,38 @@ textarea {
   color: rgba(0, 0, 0, 0.6392156863);
   font-weight: 400;
 }
+.header-right .add-to-cart {
+  position: relative;
+  margin-inline-start: 7px;
+  font-size: 16px;
+}
+.header-right .add-to-cart span {
+  position: absolute;
+  top: -2px;
+  right: -9px;
+  background: var(--bs-primary);
+  color: #fff;
+  font-size: 7px;
+  width: 15px;
+  line-height: 15px;
+  height: 15px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.mobilemenuoffcanvas .form_area {
+  margin-top: 10px;
+  padding: 0 16px;
+}
+.mobilemenuoffcanvas .form_area .from-group {
+  position: relative;
+}
+.mobilemenuoffcanvas .form_area .from-group .btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
 
 /* ============ desktop view ============ */
 @media all and (min-width: 992px) {
@@ -6092,6 +6125,22 @@ textarea {
   box-shadow: 0px 8px 60px rgba(24, 24, 24, 0.1);
 }
 
+.header-area-v2 .sticky-navbar .form_area {
+  display: none;
+}
+
+@media (min-width: 1199.98px) {
+  .mobile-nav {
+    display: none;
+  }
+}
+@media (max-width: 1199.98px) {
+  .mobile-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
 /*===========================================
 ================= menu offcanvas ============
 ===========================================*/
@@ -6233,6 +6282,85 @@ textarea {
 /*===========================================
 =================End menu offcanvas ============
 ===========================================*/
+@media (min-width: 1199.98px) {
+  .header-top-mobile {
+    display: none;
+  }
+  .bottom-nav {
+    display: none;
+  }
+}
+@media (max-width: 1199.98px) {
+  .header-top {
+    display: none;
+  }
+  .header-top-mobile {
+    padding: 8px 0;
+  }
+  .header-top-mobile .header-top-mobile-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-top-mobile .header-top-socials {
+    display: flex;
+    gap: 14px;
+    font-size: 18px;
+  }
+  .header-top-mobile .offer-btn {
+    background: #fff;
+    color: var(--bs-primary);
+    padding: 6px 10px;
+    border-radius: 3px;
+    font-size: 16px;
+    display: inline-block;
+  }
+}
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+.bottom-nav .action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 15px 30px;
+  z-index: 1;
+}
+.bottom-nav .action li {
+  text-align: center;
+}
+.bottom-nav .action li i {
+  color: #000;
+  font-size: 15px;
+}
+.bottom-nav .action li p {
+  font-size: 14px;
+  margin: 0;
+  color: #000;
+}
+.bottom-nav .add-to-cart {
+  position: relative;
+  font-size: 16px;
+}
+.bottom-nav .add-to-cart span {
+  position: absolute;
+  top: -2px;
+  right: -9px;
+  background: var(--bs-primary);
+  color: #fff;
+  font-size: 7px;
+  width: 15px;
+  line-height: 15px;
+  height: 15px;
+  border-radius: 50%;
+  text-align: center;
+}
+
 /*====================== */
 /*====== Hero css ======*/
 /*====================== */
@@ -6242,7 +6370,7 @@ textarea {
 
 @media (max-width: 1199px) {
   .hero-area {
-    padding-top: 80px;
+    padding-top: 130px;
   }
 }
 /*====================== */
@@ -6372,6 +6500,21 @@ textarea {
   display: block;
 }
 
+@media (max-width: 992px) {
+  .feature-section .product-card-row {
+    --bs-gutter-x: .5rem;
+  }
+  .feature-section .product-card .add-btn {
+    margin-bottom: 10px;
+    height: 42px;
+    line-height: 42px;
+  }
+  .btn {
+    --bs-btn-padding-x: 20px;
+    --bs-btn-padding-y: 10px;
+    font-size: 14px;
+  }
+}
 /*====================== */
 /*====== productModal ======*/
 /*====================== */
@@ -6872,7 +7015,7 @@ textarea {
   line-height: var(--size);
   cursor: pointer;
   position: fixed;
-  bottom: 20px;
+  bottom: 80px;
   left: 10px;
   border-radius: 50%;
   z-index: 99;
