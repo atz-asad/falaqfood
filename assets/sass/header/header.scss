@@ -548,7 +548,7 @@
   height: 34px;
   padding: 0;
   border: 0;
-  background: var(--bs-primary);
+  background: var(--bs-white);
   z-index: 1000;
   transition: all 0.4s ease;
 
@@ -563,7 +563,7 @@
   width: 22px;
   margin-inline: auto;
   height: 2px;
-  background: var(--bs-white);
+  background: #000;
   border-radius: 10px;
   transition: transform 200ms 0ms, top 200ms 160ms;
 }
@@ -854,6 +854,14 @@
 
 }
 
+@media (max-width:1199.98px) {
+  .header-top-mobile .offer-btn {
+    font-size: 14px;
+  }
+}
+
+
+
 .bottom-nav {
   position: fixed;
   bottom: 0;
@@ -878,9 +886,9 @@
       }
 
       p {
-        font-size: 14px;
+        font-size: 13px;
         margin: 0;
-        color: #000;
+        color: #000000d4;
       }
     }
   }

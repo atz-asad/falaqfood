@@ -4854,7 +4854,7 @@ textarea {
   --bs-btn-padding-y: 10px;
   font-size: 16px;
   font-family: var(--bs-heading-font-family);
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .btn-outline-light {
@@ -6060,7 +6060,7 @@ textarea {
   height: 34px;
   padding: 0;
   border: 0;
-  background: var(--bs-primary);
+  background: var(--bs-white);
   z-index: 1000;
   transition: all 0.4s ease;
 }
@@ -6074,7 +6074,7 @@ textarea {
   width: 22px;
   margin-inline: auto;
   height: 2px;
-  background: var(--bs-white);
+  background: #000;
   border-radius: 10px;
   transition: transform 200ms 0ms, top 200ms 160ms;
 }
@@ -6316,6 +6316,11 @@ textarea {
     display: inline-block;
   }
 }
+@media (max-width: 1199.98px) {
+  .header-top-mobile .offer-btn {
+    font-size: 14px;
+  }
+}
 .bottom-nav {
   position: fixed;
   bottom: 0;
@@ -6339,9 +6344,9 @@ textarea {
   font-size: 15px;
 }
 .bottom-nav .action li p {
-  font-size: 14px;
+  font-size: 13px;
   margin: 0;
-  color: #000;
+  color: rgba(0, 0, 0, 0.831372549);
 }
 .bottom-nav .add-to-cart {
   position: relative;
@@ -6964,6 +6969,9 @@ textarea {
   color: var(--bs-primary);
 }
 
+.footer-area {
+  background: rgba(232, 232, 232, 0.4588235294);
+}
 .footer-area .socials {
   display: flex;
   align-items: center;
