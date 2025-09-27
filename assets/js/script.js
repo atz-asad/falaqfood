@@ -222,7 +222,9 @@
         });
     });
 
-
+    /*=-----------------------------
+        productmodal_slider Slider
+    -----------------------------*/
     var swiper = new Swiper(".productmodal_slider", {
         navigation: {
             nextEl: ".swiper-button-next",
@@ -230,6 +232,45 @@
         },
     });
 
+
+    /*=--------------------------------
+        review 
+    ---------------------------------*/
+    const stars = document.querySelectorAll('.stars');
+    let currentRating = 0;
+
+    // Hover effect
+    stars.forEach((star, idx) => {
+        star.addEventListener('mouseover', () => {
+            resetStars();
+            for (let i = 0; i <= idx; i++) {
+                stars[i].classList.add('hovered');
+            }
+        });
+
+        star.addEventListener('mouseout', () => {
+            resetStars();
+            applyRating(currentRating);
+        });
+
+        star.addEventListener('click', () => {
+            currentRating = idx + 1;
+            applyRating(currentRating);
+        });
+    });
+
+    function resetStars() {
+        stars.forEach(s => {
+            s.classList.remove('hovered');
+            s.classList.remove('filled');
+        });
+    }
+
+    function applyRating(rating) {
+        for (let i = 0; i < rating; i++) {
+            stars[i].classList.add('filled');
+        }
+    }
 
 })(jQuery);
 
