@@ -233,6 +233,61 @@
     });
 
 
+    $('.slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        // fade: true,
+        asNavFor: '.slider-nav',
+        prevArrow: '<button class="slick-prev slick-arrow-up"><i class="fa fa-chevron-left"></i></button>',
+        nextArrow: '<button class="slick-next slick-arrow-down"><i class="fa fa-chevron-right"></i></button>'
+    });
+
+    $('.slider-nav').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.slider-for',
+        arrows: true,
+        vertical: true,
+        focusOnSelect: true,
+        prevArrow: '<button class="slick-prev slick-arrow-up"><i class="fa fa-chevron-up"></i></button>',
+        nextArrow: '<button class="slick-next slick-arrow-down"><i class="fa fa-chevron-down"></i></button>'
+    });
+
+
+    function initZoomOnActiveSlide() {
+        // Remove any existing zoom containers
+        $('.zoomContainer').remove();
+        // Remove previously attached zoom
+        $('.slider-for .slick-slide img').each(function () {
+            if ($(this).data('ezPlus')) {
+                $(this).ezPlus('destroy');
+            }
+        });
+
+        // Get active slide's image
+        const $activeImg = $('.slider-for .slick-current img');
+
+        // Optional: assign ID if needed
+        $activeImg.attr('id', 'zoom_05');
+
+        // Init ezPlus
+        $activeImg.ezPlus({
+            zoomType: 'inner',
+            cursor: 'crosshair'
+        });
+    }
+
+    // Init on first load
+    initZoomOnActiveSlide();
+
+    // Re-init on slide change
+    $('.slider-for').on('afterChange', function (event, slick, currentSlide) {
+        initZoomOnActiveSlide();
+    });
+
+
+
     /*=--------------------------------
         review 
     ---------------------------------*/

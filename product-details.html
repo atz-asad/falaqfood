@@ -16,6 +16,9 @@
     <link rel="stylesheet" href="assets/fonts/icomoon/style.css">
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="assets/css/vendor/swiper-bundle.min.css">
+    <!-- Slick slider CSS -->
+    <link rel="stylesheet" href="assets/css/vendor/slick/slick.css">
+    <link rel="stylesheet" href="assets/css/vendor/slick/slick-theme.css">
     <!-- Aos animate css -->
     <link rel="stylesheet" href="assets/css/vendor/aos.min.css">
     <!-- Nice-select -->
@@ -269,9 +272,41 @@
         <div class="container">
           <div class="row">
             <div class="col-md-6">
+              <!-- <i class="fa-solid fa-maximize"></i> -->
               <!-- product-details-slider -->
               <div class="product-details-slider">
+                <!-- Thumbnail Slider (Navigation) -->
+                <div class="slider-nav">
+                  <div>
+                    <img src="assets/images/product/slider-1.webp" alt="Thumbnail 1">
+                  </div>
+                  <div>
+                    <img src="assets/images/product/slider-2.webp" alt="Thumbnail 2">
+                  </div>
+                  <div>
+                    <img src="assets/images/product/slider-3.webp" alt="Thumbnail 3">
+                  </div>
+                  <div>
+                    <img src="assets/images/product/slider-1.webp" alt="Thumbnail 1">
+                  </div>
 
+                </div>
+                <!-- Main Slider (Large Images) -->
+                <div class="slider-for">
+                  <div>
+                    <img src="assets/images/product/slider-1.webp" alt="Product Image 1">
+                  </div>
+                  <div>
+                    <img src="assets/images/product/slider-2.webp" alt="Product Image 2">
+                  </div>
+                  <div>
+                    <img src="assets/images/product/slider-3.webp" alt="Product Image 3">
+                  </div>
+                  <div>
+                    <img src="assets/images/product/slider-1.webp" alt="Product Image 1">
+                  </div>
+
+                </div>
               </div>
             </div>
 
@@ -375,7 +410,7 @@
       </section>
       <!-- ======= End product-details ========= -->
 
-      <section class="product-tabs-section pb-100">
+      <section class="product-tabs-section pb-50">
         <div class="container">
 
           <div class="product-tabs-wrapper">
@@ -398,7 +433,7 @@
             </ul>
 
             <div class="tab-content" id="myTabContent">
-              <div class="tab-pane fade " id="description" role="tabpanel">
+              <div class="tab-pane fade show active" id="description" role="tabpanel">
                 <div class="tab-content-inner">
                   <p class="mb-20">মেথি মিক্স পাউডার তৈরি করা হয় ১৫টিরও বেশি প্রাকৃতিক ভেষজ উপাদান দিয়ে। এর মধ্যে
                     উল্লেখযোগ্য হলো মেথি দানা, আমলকি, হরতকি,
@@ -454,7 +489,7 @@
 
                 </div>
               </div>
-              <div class="tab-pane fade show active" id="review2" role="tabpanel">
+              <div class="tab-pane fade" id="review2" role="tabpanel">
                 <div class="tab-content-inner">
                   <div class="reviews">
                     <div class="comments-area">
@@ -631,13 +666,13 @@
         </div>
       </section>
 
-
+      <!-- related-product -->
       <section class="related-product border-top pt-30">
         <div class="container">
           <h4 class="fw-normal mb-30">Related products</h4>
           <div class="slider-area">
             <div class="swiper default-slider pb-50" id="default-slider-relatedproduct" data-slidespace="30"
-              data-xsmview="1" data-smview="1" data-mdview="2" data-lgview="3" data-xlview="4">
+              data-xsmview="2" data-smview="2" data-mdview="3" data-lgview="3" data-xlview="4">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="product-card mb-30">
@@ -797,7 +832,7 @@
           </div>
         </div>
       </section>
-
+      <!-- related-product End -->
       <!-- Modal -->
       <div class="modal fade productModal" id="productModal" tabindex="-1" aria-labelledby="productModalLabel"
         aria-hidden="true">
@@ -1045,6 +1080,8 @@
     <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
     <!-- swiper -->
     <script src="assets/js/vendor/swiper-bundle.min.js"></script>
+    <!-- slick slider -->
+    <script src="assets/js/vendor/slick/slick.min.js"></script>
     <!-- nice-select -->
     <script src="assets/js/vendor/jquery.nice-select.min.js"></script>
     <!-- jquery-ui -->
@@ -1062,6 +1099,7 @@
     <!-- select2 -->
     <script src="assets/js/vendor/select2.min.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/gh/igorlino/elevatezoom-plus@1.2.3/src/jquery.ez-plus.js"></script>
 
 
     <!-- header-menu JS -->

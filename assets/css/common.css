@@ -155,7 +155,7 @@ body {
 
 @media (min-width: 1400px) {
   .container {
-    max-width: 1440px;
+    max-width: 1222px;
   }
 }
 .dropdown-menu {
@@ -5877,7 +5877,7 @@ textarea {
   margin-left: 20px;
   display: flex;
   gap: 30px;
-  max-width: 820px;
+  max-width: 630px;
   width: 100%;
 }
 .header-area .form_area form {
@@ -6949,6 +6949,141 @@ textarea {
 }
 
 /*-------------- Product Details ------------ */
+.product-details-area .product-details-slider {
+  display: flex;
+  gap: 10px;
+  max-width: 580px;
+}
+.product-details-area .product-details-slider .slider-nav {
+  max-width: 125px;
+  min-width: 125px;
+  width: 100%;
+}
+.product-details-area .product-details-slider .slider-nav .slick-slide {
+  margin-bottom: 10px;
+  max-height: 135px;
+  position: relative;
+}
+.product-details-area .product-details-slider .slider-nav .slick-slide::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #fff;
+  opacity: 0;
+}
+.product-details-area .product-details-slider .slider-nav .slick-slide img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.product-details-area .product-details-slider .slider-nav .slick-slide.slick-current.slick-active::after {
+  opacity: 0.5;
+}
+.product-details-area .product-details-slider .slider-nav .slick-prev {
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  top: inherit;
+  background: #f7f7f7;
+  color: #939393;
+  transform: inherit;
+  font-size: 22px;
+  width: 58px;
+  height: 30px;
+}
+.product-details-area .product-details-slider .slider-nav .slick-prev i {
+  font-weight: 300;
+}
+.product-details-area .product-details-slider .slider-nav .slick-prev::before {
+  display: none;
+}
+.product-details-area .product-details-slider .slider-nav .slick-next {
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  top: inherit;
+  background: #f7f7f7;
+  color: #939393;
+  transform: inherit;
+  font-size: 22px;
+  width: 58px;
+  height: 30px;
+}
+.product-details-area .product-details-slider .slider-nav .slick-next i {
+  font-weight: 300;
+}
+.product-details-area .product-details-slider .slider-nav .slick-next::before {
+  display: none;
+}
+.product-details-area .product-details-slider .slider-for {
+  max-height: 450px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.product-details-area .product-details-slider .slider-for .slick-slide img {
+  width: 0 !important;
+  height: 0 !important;
+}
+.product-details-area .product-details-slider .slider-for .slick-current img,
+.product-details-area .product-details-slider .slider-for .slick-active img {
+  width: auto !important;
+  height: auto !important;
+  display: block !important;
+}
+.product-details-area .product-details-slider .slider-for img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.product-details-area .product-details-slider .slider-for .slick-prev {
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #212121;
+  font-size: 22px;
+  z-index: 9999;
+  transition: all 0.3s ease;
+}
+.product-details-area .product-details-slider .slider-for .slick-prev i {
+  font-weight: 300;
+}
+.product-details-area .product-details-slider .slider-for .slick-prev::before {
+  display: none;
+}
+.product-details-area .product-details-slider .slider-for .slick-next {
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #212121;
+  font-size: 22px;
+  z-index: 9999;
+  transition: all 0.3s ease;
+}
+.product-details-area .product-details-slider .slider-for .slick-next i {
+  font-weight: 300;
+}
+.product-details-area .product-details-slider .slider-for .slick-next::before {
+  display: none;
+}
+.product-details-area .product-details-slider .slider-for::after {
+  position: absolute;
+  content: "\f31e";
+  font-family: var(--font-awesome);
+  bottom: 15px;
+  left: 15px;
+  z-index: 9999;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: #fff;
+  color: rgba(0, 0, 0, 0.4784313725);
+  text-align: center;
+  line-height: 50px;
+}
 .product-details-area .product-details .breadcrumb {
   font-size: 14px;
   margin-bottom: 20px;
@@ -7032,6 +7167,11 @@ textarea {
   display: inline-flex;
   align-items: center;
   gap: 10px;
+}
+
+.zoomWindow {
+  border: none !important;
+  cursor: default !important;
 }
 
 .product-tabs-section {
