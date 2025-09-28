@@ -52,6 +52,7 @@
         fixedContentPos: false
     })
 
+
     /*============================================
     AOS js init
     ============================================*/
@@ -179,8 +180,6 @@
     })
 
 
-
-
     /*============================================
         default Slider
     ============================================*/
@@ -237,11 +236,36 @@
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
+        infinite: false,
         // fade: true,
         asNavFor: '.slider-nav',
         prevArrow: '<button class="slick-prev slick-arrow-up"><i class="fa fa-chevron-left"></i></button>',
         nextArrow: '<button class="slick-next slick-arrow-down"><i class="fa fa-chevron-right"></i></button>'
     });
+
+    $('.show-product-gallery').on('click', function (e) {
+        e.preventDefault();
+
+        var items = [];
+
+        // slider-for এর সব image collect করব
+        $('.slider-for img').each(function () {
+            items.push({
+                src: $(this).attr('src'),
+                type: 'image'
+            });
+        });
+
+        // Magnific Popup ওপেন করা
+        $.magnificPopup.open({
+            items: items,
+            gallery: {
+                enabled: true
+            },
+            type: 'image'
+        });
+    });
+
 
     $('.slider-nav').slick({
         slidesToShow: 3,
@@ -250,8 +274,26 @@
         arrows: true,
         vertical: true,
         focusOnSelect: true,
+        infinite: false,
         prevArrow: '<button class="slick-prev slick-arrow-up"><i class="fa fa-chevron-up"></i></button>',
-        nextArrow: '<button class="slick-next slick-arrow-down"><i class="fa fa-chevron-down"></i></button>'
+        nextArrow: '<button class="slick-next slick-arrow-down"><i class="fa fa-chevron-down"></i></button>',
+        responsive: [
+            {
+                breakpoint: 1920,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 1199,
+                settings: {
+                    vertical: false,
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                }
+            },
+        ]
     });
 
 
