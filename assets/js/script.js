@@ -371,6 +371,41 @@
         }
     }
 
+
+    /*=--------------------------------
+     quick-shop 
+ ---------------------------------*/
+    var productCards = $(".product-card");
+
+    productCards.each(function () {
+        var $card = $(this);
+        var $btnReplace = $card.find(".btn-replace");
+        var $quickShop = $card.find(".quick-shop");
+        var $closeBtn = $card.find(".quick-shop .close-btn");
+
+        if ($btnReplace.length && $quickShop.length) {
+            $btnReplace.on("click", function (e) {
+                e.preventDefault();
+                $quickShop.addClass("show");
+                $card.addClass("active_quickshop");
+                $(this).addClass("disable");
+            });
+        }
+
+        if ($closeBtn.length && $quickShop.length) {
+            $closeBtn.on("click", function (e) {
+                e.preventDefault();
+                $quickShop.removeClass("show");
+                $btnReplace.removeClass("disable");
+                $card.removeClass("active_quickshop");
+            });
+        }
+    });
+
+
+
+
+
 })(jQuery);
 
 
