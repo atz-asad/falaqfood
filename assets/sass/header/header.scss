@@ -381,21 +381,31 @@
 
   .add-to-cart {
     position: relative;
-    margin-inline-start: 7px;
     font-size: 16px;
+    display: flex;
+    gap: 10px;
 
-    span {
-      position: absolute;
-      top: -2px;
-      right: -9px;
-      background: var(--bs-primary);
-      color: #fff;
-      font-size: 7px;
-      width: 15px;
-      line-height: 15px;
-      height: 15px;
-      border-radius: 50%;
-      text-align: center;
+    i {
+      position: relative;
+      font-size: 18px;
+
+      span {
+        position: absolute;
+        top: -10px;
+        right: -9px;
+        background: var(--bs-primary);
+        color: #fff;
+        font-size: 7px;
+        width: 15px;
+        line-height: 15px;
+        height: 15px;
+        border-radius: 50%;
+        text-align: center;
+      }
+    }
+
+    .amount {
+      font-size: 14px;
     }
   }
 
@@ -875,7 +885,7 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  z-index: 9999;
+  z-index: 999;
 
   .action {
     display: flex;

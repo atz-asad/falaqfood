@@ -78,6 +78,20 @@
 
 }
 
+.btn-outline {
+  color: var(--bs-primary);
+  transition: all 0.3s ease-out;
+  border: 1px solid var(--bs-primary);
+  --bs-btn-padding-y: 6px;
+  --bs-btn-padding-x: 14px;
+}
+
+.btn-sm,
+.btn-group-sm>.btn {
+  padding: 5px 12px;
+  font-size: 14px;
+  font-weight: 400;
+}
 
 .btn-primary {
   background: var(--bs-primary);

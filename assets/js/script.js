@@ -403,6 +403,30 @@
     });
 
 
+    /*============================================
+    price filter
+    ============================================*/
+    $(function () {
+        var minPrice = 0;
+        var maxPrice = 2000;
+
+        $("#slider-range").slider({
+            range: true,
+            min: minPrice,
+            max: maxPrice,
+            values: [200, 1800],
+            slide: function (event, ui) {
+                $("#amount").val(ui.values[0] + " ৳ — " + ui.values[1] + " ৳");
+            }
+        });
+
+        // Set initial display
+        $("#amount").val(
+            $("#slider-range").slider("values", 0) + " ৳ — " +
+            $("#slider-range").slider("values", 1) + " ৳"
+        );
+    });
+
 
 
 

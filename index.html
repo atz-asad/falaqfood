@@ -166,9 +166,14 @@
                             <div class="header-right ms-auto">
                                 <ul class="reset-ul action">
                                     <li>
-                                        <a href="#" class="add-to-cart">
-                                            <i class="fa-solid fa-cart-shopping"></i>
-                                            <span>0</span>
+                                        <a href="javascript:void(0)" class="add-to-cart" data-bs-toggle="offcanvas"
+                                            data-bs-target="#shoppingcart-offcanvas"
+                                            aria-controls="shoppingcart-offcanvas">
+                                            <i class="fa-solid fa-cart-shopping">
+
+                                                <span>5</span>
+                                            </i>
+                                            <p class="mb-0 amount">2555tk</p>
                                         </a>
                                     </li>
                                 </ul>
@@ -216,13 +221,15 @@
                                         <a href="#"><i class="fa-solid fa-user"></i></a>
                                     </li>
                                     <li>
-                                        <a href="#" class="add-to-cart">
-                                            <i class="fa-solid fa-cart-shopping"></i>
-                                            <span>0</span>
+                                        <a href="javascript:void(0)" class="add-to-cart" data-bs-toggle="offcanvas"
+                                            data-bs-target="#shoppingcart-offcanvas"
+                                            aria-controls="shoppingcart-offcanvas">
+                                            <i class="fa-solid fa-cart-shopping">
+
+                                                <span>5</span>
+                                            </i>
+                                            <p class="mb-0 amount">2555tk</p>
                                         </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">0TK</a>
                                     </li>
                                 </ul>
                             </div>
@@ -259,9 +266,7 @@
                 <div class="offcanvas-body">
                     <!-- mobile-menu clone -->
                     <nav id="mobileMenu" class="mobile-menu mb-40">
-
                     </nav>
-
                 </div>
             </div>
             <!-- End Mobile-menu -->
@@ -1229,6 +1234,68 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Start shoppingcartffcanvas -->
+            <div class="offcanvas shoppingcartffcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="true"
+                tabindex="-1" id="shoppingcart-offcanvas">
+                <div class="offcanvas-header border-bottom align-items-center justify-content-between px-20 pt-20">
+                    <h5>Shopping cart</h5>
+                    <a href="#" class="menu-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                        <i class="fa-light fa-xmark"></i>
+                    </a>
+                </div>
+
+                <div class="offcanvas-body">
+                    <ul class="reset-ul product-card-list">
+                        <li>
+                            <div class="product-card-sm">
+                                <div class="image">
+                                    <img src="assets/images/product/product-1.webp" alt="">
+                                </div>
+                                <div class="content">
+                                    <h6 class="lc-3 mb-0 small"><a href="#">বিটরুট পাউডার (স্প্রে ড্রাইড) – Beetroot
+                                            Powde</a>
+                                    </h6>
+                                    <div class="price2">
+                                        <span class="old-price">1,950 ৳</span>
+                                        <span class="new-price">1,300 ৳</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-card-sm">
+                                <div class="image">
+                                    <img src="assets/images/product/product-1.webp" alt="">
+                                </div>
+                                <div class="content">
+                                    <h6 class="lc-3 mb-0 small"><a href="#">বিটরুট পাউডার (স্প্রে ড্রাইড) – Beetroot
+                                            Powde</a>
+                                    </h6>
+                                    <div class="price2">
+                                        <span class="old-price">1,950 ৳</span>
+                                        <span class="new-price">1,300 ৳</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="offcanvas-footer">
+                    <div class="subtotal">
+                        <h4 class="mb-0">Subtotal:</h4>
+                        <h4 class="mb-0 text-primary ">3,800 ৳</h4>
+                    </div>
+
+                    <a href="#" class="btn view-cart w-100">View cart</a>
+                    <a href="#" class="btn btn-primary checkout-btn w-100">Checkout</a>
+
+                </div>
+
+
+            </div>
+            <!-- Start shoppingcartffcanvas -->
+
 
             <!-- Modal -->
             <div class="modal fade productModal" id="productModal" tabindex="-1" aria-labelledby="productModalLabel"
